@@ -1,0 +1,292 @@
+<?php
+session_start();
+?>
+<DOCTYPE html>
+<html>
+
+  <head>
+
+    <title> Welcome HoneyComb</title>
+    <style type="text/css">
+
+      body
+      {
+        background-image:url(background4.jpg);
+        background-repeat: no-repeat;
+        font-family: Helvetica;
+        height: 200px;
+        margin:0;
+        padding:0;
+
+      }
+      #aLogo{
+        color:#5B4E62;
+      }
+      #login_container
+      {
+        float:left;
+        margin-left:350px;
+        margin-top:40px;
+        width:1000.97px;
+        height:1000.39px;
+        opacity: 0.89;
+        padding-top:10px;
+        background-color:#C6B3CB;
+        width:530.97px;
+        height:486.39px;
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 4px 4px 20px 0px #707070;
+        color: #936F8C;
+      }
+      #user_info{
+        margin-top:50px;
+        margin-left: 0px;
+        padding:0px;
+      }
+      #myAnimation
+      {
+
+        margin-left:4px;
+        width: 730px;
+        height: 400px;
+        position: absolute;
+        background-color: ;
+
+      }
+      ::placeholder
+      {
+        color: white;
+        opacity: 0.5;
+      }
+      .credential
+      {
+
+        margin-left:70px;
+        outline:none;
+        height:50px;
+        padding-left:50px;
+        width:390px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;;
+        background-color: #936F8C;
+        color:white;
+        font-size:12px;
+        border-radius: 50px 50px 50px 50px;
+        opacity:0.7;
+
+      }
+      button
+      {
+        border-right:none;
+        border-left:none;
+        border-top:none;
+        border-bottom:1px solid #C6B3CB ;
+        background-color:#C6B3CB;
+        font-size:14px;
+        color:#817E8B;
+
+
+      }
+
+      #signup_container
+      {
+        display:none;
+        margin-left:220px;
+        margin-top:30px;
+        opacity: 0.99;
+        padding-top:10px;
+        background-color:#C6B3CB;
+        width:790.97px;
+        height:526.39px;
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 4px 4px 20px 0px #707070;
+        color: #936F8C;
+
+      }
+
+      #suSubmit
+      {
+        height:50px;
+        width:380px;
+        border-radius:50px ;
+        margin-left:210px;
+        padding:0;
+        box-shadow: 4px 4px 10px 0px #707070;
+
+      }
+      .signup
+      {
+
+        margin-left:70px;
+        outline:none;
+        height:50px;
+        padding-left:50px;
+        width:200px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;;
+        background-color: #936F8C;
+        color:white;
+        font-size:12px;
+        border-radius: 50px 50px 50px 50px;
+        opacity:0.9;
+        transition:  2s;
+      }
+      #text{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 50px;
+          color: white;
+          transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+      }
+      #suTitle
+      {
+      font-size: 24px;
+      margin-left:350px;
+      }
+      .signup
+      {
+
+        margin-left:70px;
+        outline:none;
+        height:50px;
+        padding-left:50px;
+        width:290px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;;
+        background-color: #936F8C;
+        color:white;
+        font-size:12px;
+        border-radius: 50px 50px 50px 50px;
+        opacity:0.9;
+        transition:  2s;
+
+      }
+      .float{
+        clear:both;
+      }
+      #submit
+      {
+         height:50px;
+         width:380px;
+         border-radius:50px ;
+         margin-left:70px;
+         padding:0;
+         box-shadow: 4px 4px 10px 0px #707070;
+
+      }
+      #copyright
+      {
+        height:15px;
+        width:1000px;
+        margin-top: 135px;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+        background-color:#C6B3CB;;
+        color:white;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+<!--login portion of page-->
+    <div id="login">
+        <div id="login_container">
+          <center>
+            <p id="aLogo">HoneyComb</p>
+            <img src="myLogo.png" height="40" width="40px">
+            <p>communicate with collegues</p>
+            </center>
+            <div id="user_info">
+
+              <form id="input_data" action="myLogin.php" method="POST">
+                  <input id="leUsername" type="text" class="credential" placeholder="username" name="username">
+                  <br/>
+                  <br/>
+                  <input id="password" type="password" class="credential" placeholder="password" name="password">
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <input type="submit" name="login-submit" id="submit" value="Log In">
+              </form>
+        <center><p>Don't have an account?Sign up<button id="blue">here</button></P></center>
+      </div>
+    </div>
+<!--end of login portion of page-->
+
+<!--sign up overlay-->
+    <div id="signup_container" >
+        <div id="myAnimation">
+          <div id="suTitle"><p >Sign Up</P></div>
+          <form id="input_data" action="mySignup.php" method="POST">
+              <input id="leUsername" type="text"class="signup" placeholder="username" name="sUsername">
+              <input id="password" type="text" class="signup"  placeholder="First Name" name="firstname">
+              <br/>
+              <br/>
+              <input id="leUsername" type="text" class="signup" placeholder="Email Address" name="emailAddress">
+              <input id="password" type="text" class="signup" placeholder="Last Name" name="lastname">
+              <br/>
+              <br/>
+              <input id="leUsername" type="password" class="signup" placeholder="Password" name="sPassword">
+              <input id="password" type="text" class="signup" placeholder="Occupation" name="occupation">
+              <br/>
+              <br/>
+              <input id="leUsername" type="password" class="signup" placeholder="Retype Password" name="rPassword">
+              <input id="password" type="text" class="signup"	placeholder="Company Identafication Number" name="id">
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <input type="submit" name="signup-submit" id="suSubmit" value="Sign Up">
+
+          </form>
+          <center><p>Already a have an account? Click<button id="red">here</button></p></center>
+        </div>
+      </div>
+<!--end of signup overlay-->
+
+
+
+
+
+
+
+
+
+
+<!--javascript code-->
+    <script type="text/javascript">
+    //script for red circle
+    document.getElementById("red").onclick =function()
+    {
+      document.getElementById("signup_container").style.display="none";
+    }
+    document.getElementById("blue").onclick =function()
+    {
+      var elem = document.getElementById("signup_container");
+      elem.style.display="block";
+    }
+    </script>
+<!--end of javascript code-->
+
+    <div class="float"></div>
+    <div id="copyright">
+      <center><p><img src="copyrightwhite.png" width="15px"> 2018-2018 The Warren-Deshad Company. No rights Reserved</p></center>
+    </div>
+
+  </body>
+<!--end of page code-->
+</html>

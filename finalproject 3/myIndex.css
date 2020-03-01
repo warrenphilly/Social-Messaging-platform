@@ -1,0 +1,201 @@
+
+      body
+      {
+        background-image:url(background4.jpg);
+        background-repeat: no-repeat;
+        font-family: Helvetica;
+        height: 200px;
+        margin:0;
+        padding:0;
+
+      }
+      #aLogo{
+        color:#5B4E62;
+      }
+      #login_container
+      {
+        float:left;
+        margin-left:350px;
+        margin-top:40px;
+        width:1000.97px;
+        height:2000.39px;
+        opacity: 0.89;
+        padding-top:10px;
+        background-color:#C6B3CB;
+        width:530.97px;
+        height:516.39px;
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 4px 4px 20px 0px #707070;
+        color: #936F8C;
+      }
+      #user_info{
+        margin-top:50px;
+        margin-left: 0px;
+        padding:0px;
+      }
+      #myAnimation
+      {
+
+        margin-left:4px;
+        width: 730px;
+        height: 400px;
+        position: absolute;
+        background-color: ;
+
+      }
+      ::placeholder
+      {
+        color: white;
+        opacity: 0.5;
+      }
+      .credential
+      {
+
+        margin-left:70px;
+        outline:none;
+        height:50px;
+        padding-left:50px;
+        width:390px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;;
+        background-color: #936F8C;
+        color:white;
+        font-size:12px;
+        border-radius: 50px 50px 50px 50px;
+        opacity:0.7;
+
+      }
+      button
+      {
+        border-right:none;
+        border-left:none;
+        border-top:none;
+        border-bottom:1px solid #C6B3CB ;
+        background-color:#C6B3CB;
+        font-size:14px;
+        color:#817E8B;
+
+
+      }
+
+      #signup_container
+      {
+        display:block;
+        margin-left:220px;
+        margin-top:30px;
+        opacity: 0.99;
+        padding-top:10px;
+        background-color:#C6B3CB;
+        width:790.97px;
+        height:525.39px;
+        border-radius: 34px 34px 34px 34px;
+        box-shadow: 4px 4px 20px 0px #707070;
+        color: #936F8C;
+
+      }
+
+      #suSubmit
+      {
+        height:50px;
+        width:380px;
+        border-radius:50px ;
+        margin-left:210px;
+        padding:0;
+        box-shadow: 4px 4px 10px 0px #707070;
+
+      }
+      .signup
+      {
+
+        margin-left:70px;
+        outline:none;
+        height:50px;
+        padding-left:50px;
+        width:200px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;;
+        background-color: #936F8C;
+        color:white;
+        font-size:12px;
+        border-radius: 50px 50px 50px 50px;
+        opacity:0.9;
+        transition:  2s;
+      }
+      #text{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 50px;
+          color: white;
+          transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+      }
+      #suTitle
+      {
+      font-size: 24px;
+      margin-left:350px;
+      }
+      .signup
+      {
+
+        margin-left:70px;
+        outline:none;
+        height:50px;
+        padding-left:50px;
+        width:290px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;;
+        background-color: #936F8C;
+        color:white;
+        font-size:12px;
+        border-radius: 50px 50px 50px 50px;
+        opacity:0.9;
+        transition:  2s;
+
+      }
+      .float{
+        clear:both;
+      }
+      #submit
+      {
+         height:50px;
+         width:380px;
+         border-radius:50px ;
+         margin-left:70px;
+         padding:0;
+         box-shadow: 4px 4px 10px 0px #707070;
+
+      }
+      #copyright
+      {
+        height:15px;
+        width:100%;
+        margin-top: 135px;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+        background-color:#C6B3CB;;
+        color:white;
+
+      }
+      #here{
+        text-decoration: underline;
+        color:#817E8B;
+
+      }
+      #here:visited{
+        text-decoration: underline;
+        color:#817E8B;
+
+      }
+      .signuperror{
+        color:red !important;
+        opacity: 0.4;
+
+
+      }
